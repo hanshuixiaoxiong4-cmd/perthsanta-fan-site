@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>PerthSanta 行程表</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:system-ui,-apple-system,sans-serif;}
+body{
+  background:#121212;
+  color:#fff;
+  padding:0 14px 20px;
+}
+.banner{
+  width:100%;
+  border-radius:8px;
+  margin:16px 0;
+  overflow:hidden;
+}
+.banner img{
+  width:100%;
+  display:block;
+  object-fit:cover;
+}
+.top-title{
+  text-align:center;
+  margin-bottom:20px;
+}
+.top-title h1{
+  color:#e62828;
+  font-size:38px;
+  font-weight:bold;
+  letter-spacing:2px;
+}
+.top-title p{
+  color:#999;
+  font-size:16px;
+  margin-top:6px;
+}
+/* 月份标签栏，和截图样式对齐 */
+.tab-wrap{
+  display:flex;
+  gap:12px;
+  margin-bottom:24px;
+}
+.tab-btn{
+  flex:1;
+  padding:12px 0;
+  border:1px solid #e62828;
+  background:#121212;
+  color:#fff;
+  border-radius:8px;
+  font-size:18px;
+}
+.tab-btn.active{
+  background:#e62828;
+  color:#fff;
+}
+/* 月份内容默认隐藏 */
+.tab-content{
+  display:none;
+}
+.tab-content.show{
+  display:block;
+}
+/* 行程卡片，和截图样式一致，左侧红边 */
+.item{
+  border:1px solid #333;
+  border-left:5px solid #e62828;
+  border-radius:10px;
+  padding:16px;
+  margin-bottom:14px;
+  display:flex;
+  gap:14px;
+  align-items:flex-start;
+  background:#1c1c1c;
+}
+.event-img{
+  width:110px;
+  height:110px;
+  border-radius:6px;
+  object-fit:cover;
+  flex-shrink:0;
+}
+.item-text{
+  flex:1;
+}
+.time{
+  color:#ffb3b3;
+  font-weight:bold;
+  font-size:20px;
+  margin-bottom:6px;
+}
+.event{
+  font-size:18px;
+  line-height:1.4;
+  margin-bottom:8px;
+}
+.tag-red{
+  display:inline-block;
+  background:#e62828;
+  padding:3px 7px;
+  border-radius:4px;
+  font-size:14px;
+  margin-left:6px;
+}
+.loc{
+  color:#bbbbbb;
+  font-size:15px;
+  margin-bottom:10px;
+}
+.hash{
+  display:inline-block;
+  background:#b48800;
+  color:#fff;
+  padding:4px 8px;
+  border-radius:5px;
+  font-size:14px;
+}
+</style>
+</head>
+<body>
+
+<div class="banner">
+  <img src="https://i.postimg.cc/3xbKMxfb/mmexport1793084664725.jpg" alt="PerthSanta">
+</div>
+
+<div class="top-title">
+  <h1>PerthSanta SCHEDULE</h1>
+  <p>更新｜2026</p>
+</div>
+
+<!-- 月份切换按钮 -->
+<div class="tab-wrap">
+  <button class="tab-btn" data-tab="oct">10月</button>
+  <button class="tab-btn active" data-tab="nov">11月</button>
+  <button class="tab-btn" data-tab="dec">12月</button>
+</div>
+
+<!-- ========== 10月行程（原图全部行程，每条带图片位） ========== -->
+<div class="tab-content" id="oct">
+
+<div class="item">
+  <img class="event-img" src="https://i.postimg.cc/hv2QmqMm/img-1793082023133b2fd6eee3403b26c9238a3c7c1db4b556e488bac3a30a075a92d800499a4eb1a.jpg" alt="Chupa Chups">
+  <div class="item-text">
+    <div class="time">10月29日 周四 18:00 泰时</div>
+    <div class="event">CHUPA CHUPS X PERTHSANTA <span class="tag-red">PerthSanta</span></div>
+    <div class="loc">📍 TIKTOK: SINO FAMILY SHOP 直播 18:00(UTC+7)</div>
+    <div class="hash">#ChupaChupsxPerthSanta</div>
+  </div>
+</div>
+
+<div class="item">
+  <img class="event-img" src="https://i.postimg.cc/W1FqdCZ3/img-17930820155198a268ebcf8dcd05e4ba8c0c3066af564bbfe7dc84bd205891eb790c9748815d7.jpg" alt="Ralph's Club">
+  <div class="item-text">
+    <div class="time">10月31日 周六 TBA</div>
+    <div class="event">RALPH'S CLUB NEW YORK <span class="tag-red">PerthSanta</span></div>
+    <div class="loc">📍 SM Makati Concourse, Philippines</div>
+    <div class="hash">#PerthSanta</div>
+  </div>
+</div>
+</div>
+
+<!-- ========== 11月 区域（现在默认选中11月） ========== -->
+<div class="tab-content show" id="nov">
+<div class="item">
+  <img class="event-img" src="https://i.postimg.cc/7PRS3hJ7/IMG-20261027-182938.jpg" alt="">
+  <div class="item-text">
+    <div class="time">11月03日 周二</div＞
+<div class="start-time"> </div>
+    <div class="event"> GMMTV推介会 <span class="tag-red">PerthSanta</span></div>
+    <div class="loc">📍直播平台:Facebook和YouTube：GMMTV   4:00 PM (泰时) </div>
+  </div>
+</div>
+</div>
+
+<div class="tab-content show" id="nov">
+<div class="item">
+  <img class="event-img" src="https://i.postimg.cc/1zCyQ5CZ/mmexport1793084043088.jpg" alt="">
+  <div class="item-text">
+    <div class="time">11月04日 周三 </div＞
+<div class="start-time"> </div>
+    <div class="event"> Scarlet Heart Premiere <span class="tag-red">Perth</span></div>
+    <div class="loc">📍UNION HALL, UNION MALL    20:00（泰国时间）｜19:00 入场</div>
+  </div>
+</div>
+</div>
+
+<div class="tab-content show" id="nov">
+<div class="item">
+  <img class="event-img" src="https://i.postimg.cc/K8hPPmDq/img-1793085003567e2bd97f26aa1b70e6f76fb0b8261bac830f6ff379222624654f958961d91f48f.jpg" alt="">
+  <div class="item-text">
+    <div class="time">11月05日 周四</div>
+    <div class="event">PerthSanta with FoamDream  <span class="tag-red">PerthSanta</span></div>
+    <div class="loc">📍平台：微店「梦游演奏家 FoamDream」直播  20:00 - 21:00（北京时间）
+</div>
+  </div>
+</div>
+</div>
+
+<div class="tab-content show" id="nov">
+<div class="item">
+  <img class="event-img" src="https://i.postimg.cc/jS8yGybR/img-17930848242888cd49c9f0e38fd660493d7120afd91b210c29df234cfb29fa2f78687aa7ffa86.jpg" alt="">
+  <div class="item-text">
+    <div class="time">11月06日 周五</div>
+    <div class="event">HOUSE OF LEE <span class="tag-red">PerthSanta</span></div>
+    <div class="loc">📍 centralwOrld Zone EDEN 1 ⏰ 16:00（泰国时间）</div>
+  </div>
+</div>
+</div>
+
+<div class="tab-content show" id="nov">
+<div class="item">
+  <img class="event-img" src="https://i.postimg.cc/xjGrL3HR/mmexport1793088507646.jpg" alt="">
+  <div class="item-text">
+    <div class="time">11月07日 </div>
+    <div class="event">真爱降临 In China <span class="tag-red">PerthDomiia</span></div>
+  </div>
+</div>
+</div>
+
+<div class="tab-content show" id="nov">
+<div class="item">
+  <img class="event-img" src="https://i.postimg.cc/DwJBP7HJ/mmexport1793088510013.jpg" alt="">
+  <div class="item-text">
+    <div class="time">11月08日 </div>
+    <div class="event">愿望成真 In China <span class="tag-red">SantaDomiia</span></div>
+  </div>
+</div>
+</div>
+
+<div class="tab-content show" id="nov">
+<div class="item">
+  <img class="event-img" src="https://i.postimg.cc/CKVrMzLK/img-1793094121291934e04eabdcba906ecd6bed6893ab64743353002f0f04bee057f37b009f31222.jpg" alt="">
+  <div class="item-text">
+    <div class="time">11月13日-11月15日 </div>
+    <div class="event">THE MALDIVES AFFAIR with SANTA｜FRIENDLY ME <span class="tag-red">Santa</span></div>
+    <div class="loc">📍 马尔代夫</div>
+  </div>
+</div>
+</div>
+
+<div class="tab-content show" id="nov">
+<div class="item">
+  <img class="event-img" src="Dao Coffee Exclusive meeting " alt="">
+  <div class="item-text">
+    <div class="time">11月21日 </div>
+    <div class="event">Dao Coffee Exclusive meeting <span class="tag-red">标签</span>PerthSanta</div>
+    <div class="loc">📍 Lotus’s 拉玛4店（Lotus’s สาขาพระราม 4） 13:00–14:30（泰国时间）</div>
+  </div>
+</div>
+</div>
+
+<div class="tab-content show" id="nov">
+<div class="item">
+  <img class="event-img" src="https://i.postimg.cc/kXp9XrHY/img-1793094583944164ed97b265382b50fbc90da548a11edb36257fa3167015af42db2cc6447e411.jpg" alt="">
+  <div class="item-text">
+    <div class="time">11月22日 </div>
+    <div class="event">OLAY × Perth 清迈见面会 <span class="tag-red">Perth</span></div>
+    <div class="loc">📍 One Nimman 17:00（泰时）</div>
+  </div>
+</div>
+</div>
+
+<div class="tab-content show" id="nov">
+<div class="item">
+  <img class="event-img" src="https://i.postimg.cc/jS8yGybR/img-17930848242888cd49c9f0e38fd660493d7120afd91b210c29df234cfb29fa2f78687aa7ffa86.jpg" alt="">
+  <div class="item-text">
+    <div class="time">11月26日  周四</div>
+    <div class="event">BACK & GLOW TOGETHER <span class="tag-red"PertSanta</span></div>
+    <div class="loc">📍 平台：BBB LIVE  ⏰ 19:00（泰国时间）</div>
+  </div>
+</div>
+</div>
+
+<div class="tab-content show" id="nov">
+<div class="item">
+  <img class="event-img" src="https://i.postimg.cc/PJvp3bvw/IMG-20261027-183449.jpg" alt="">
+  <div class="item-text">
+    <div class="time">11月28日 </div>
+    <div class="event">GGMMTV Starlympics <span class="tag-red">PerthSantaDomiia</span></div>
+     <div class="loc">📍 Impact Arena, Muang Thong Thani  ⏰ 14:00（泰时）</div>
+  </div>
+</div>
+</div>
+
+<!-- ========== 12月 区域 ========== -->
+<div class="tab-content" id="dec">
+<div class="item">
+  <img class="event-img" src="这里放图链接" alt="">
+  <div class="item-text">
+    <div class="time">待添加日期</div>
+    <div class="event">在这里填写活动名称 <span class="tag-red">标签</span></div>
+    <div class="loc">📍 地点</div>
+  </div>
+</div>
+</div>
+
+<script>
+const btns = document.querySelectorAll('.tab-btn');
+const contents = document.querySelectorAll('.tab-content');
+btns.forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    // 清除所有激活
+    btns.forEach(b=>b.classList.remove('active'));
+    contents.forEach(c=>c.classList.remove('show'));
+    // 设置当前选中
+    btn.classList.add('active');
+    const targetId = btn.getAttribute('data-tab');
+    document.getElementById(targetId).classList.add('show');
+  })
+})
+</script>
+</body>
+</html>
