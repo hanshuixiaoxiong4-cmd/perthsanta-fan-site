@@ -159,7 +159,6 @@ body{
       <div class="loc">📍Central Northville ​​​ 17:30（泰国时间）</div>
     </div>
   </div>
-</div>
 <div class="item">
     <img class="event-img" src="https://i.postimg.cc/SRVF283R/HXz-FFXUb-EAAd-Rja.jpg" alt="">
     <div class="item-text">
@@ -222,9 +221,9 @@ body{
   </div>
 </div>
 
-<!-- 2027年1月（在这里加行程） -->
+<!-- 2027年1月 -->
 <div class="tab-content" id="jan">
-  <div class="item">
+   <div class="item">
     <img class="event-img" src="https://i.postimg.cc/y8rWRzBK/img-1795429645658ee029beb29e6e9abbf85e8789e3f8b9e25fea374de1d1e8132ea66161e19bbe9.jpg" alt="">
     <div class="item-text">
       <div class="time">1月30日</div>
@@ -237,6 +236,15 @@ body{
 <script>
 const btns = document.querySelectorAll('.tab-btn');
 const contents = document.querySelectorAll('.tab-content');
-btns.forEach(btn=>{
-  btn.addEventListener('click', ()=>{
-    btns.forEach(b=>b.classList.remove('act
+btns.forEach(btn => {
+  btn.onclick = function() {
+    btns.forEach(b => b.classList.remove('active'));
+    contents.forEach(c => c.classList.remove('show'));
+    this.classList.add('active');
+    const targetId = this.dataset.tab;
+    document.getElementById(targetId).classList.add('show');
+  }
+})
+</script>
+</body>
+</html>
