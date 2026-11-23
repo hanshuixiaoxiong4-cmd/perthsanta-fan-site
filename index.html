@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>PerthSanta 行程表</title>
+<title>PerthSanta SCHEDULE</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:system-ui,-apple-system,sans-serif;}
 body{
@@ -37,7 +37,6 @@ body{
   font-size:16px;
   margin-top:6px;
 }
-/* 月份标签栏，和截图样式对齐 */
 .tab-wrap{
   display:flex;
   gap:12px;
@@ -56,14 +55,12 @@ body{
   background:#e62828;
   color:#fff;
 }
-/* 月份内容默认隐藏 */
 .tab-content{
   display:none;
 }
 .tab-content.show{
   display:block;
 }
-/* 行程卡片，和截图样式一致，左侧红边 */
 .item{
   border:1px solid #333;
   border-left:5px solid #e62828;
@@ -122,103 +119,58 @@ body{
 <body>
 
 <div class="banner">
-  <img src="https://i.postimg.cc/3xbKMxfb/mmexport1793084664725.jpg" alt="PerthSanta">
+  <img src="https://i.postimg.cc/2ytGKSBg/mmexport1795434128483.jpg" alt="PerthSanta">
 </div>
 
 <div class="top-title">
   <h1>PerthSanta SCHEDULE</h1>
-  <p>更新｜2026</p>
+  <p>更新｜2026-2027</p>
 </div>
 
-<!-- 月份切换按钮 -->
 <div class="tab-wrap">
   <button class="tab-btn active" data-tab="nov">11月</button>
   <button class="tab-btn" data-tab="dec">12月</button>
+  <button class="tab-btn" data-tab="jan">27年1月</button>
 </div>
 
-<!-- ========== 11月 区域（现在默认选中11月） ========== -->
- <div class="tab-content show" id="nov">  
-
+<!-- 11月 -->
 <div class="tab-content show" id="nov">
-<div class="item">
-<img class="event-img" src="https://i.postimg.cc/pXxjnFKc/mmexport1793675507949.jpg" alt="">
-  <div class="item-text">
-    <div class="time">11月19日 </div>
-    <div class="event"> LINE MAN <span class="tag-red">PerthSanta</span></div>
-    <div class="loc">📍  LIVE  Facebook, Youtube, TikTok ของ LINE MAN
-. ​​​ 13:00（泰国时间）</div>
+  <div class="item">
+    <img class="event-img" src="https://i.postimg.cc/GpKMwGtJ/img-17930820009092d4b5d8181d7b7a3e8ab83e124ee8d677b274ed9b4eddfa5acff1c33d30b0ace.jpg" alt="">
+    <div class="item-text">
+      <div class="time">11月26日  周四</div>
+      <div class="event">BACK & GLOW TOGETHER <span class="tag-red">PerthSanta</span></div>
+      <div class="loc">📍 平台：BBB LIVE  ⏰ 19:00（泰国时间）</div>
+    </div>
+  </div>
+  <div class="item">
+    <img class="event-img" src="https://i.postimg.cc/PJvp3bvw/IMG-20261027-183449.jpg" alt="">
+    <div class="item-text">
+      <div class="time">11月28日 </div>
+      <div class="event">GGMMTV Starlympics <span class="tag-red">PerthSantaDomiia</span></div>
+      <div class="loc">📍 Impact Arena, Muang Thong Thani  ⏰ 14:00（泰时）</div>
+    </div>
+  </div>
+  <div class="item">
+    <img class="event-img" src="https://i.postimg.cc/nLgpN5hq/img-1794918275979c8bd0b1aa7b7d73fc813ce2081b2030ae878f78f6c393409320c9a4c6c1f074a.jpg" alt="">
+    <div class="item-text">
+      <div class="time">11月29日 </div>
+      <div class="event"> DESTINY WELLNESS CLINIC <span class="tag-red">Perth</span></div>
+      <div class="loc">📍Central Northville ​​​ 17:30（泰国时间）</div>
+    </div>
   </div>
 </div>
+<div class="item">
+    <img class="event-img" src="https://i.postimg.cc/SRVF283R/HXz-FFXUb-EAAd-Rja.jpg" alt="">
+    <div class="item-text">
+      <div class="time">11月29日 </div>
+      <div class="event"> โตมากับวิฟ ฟินไปกับ 𝑺𝒂𝒏𝒕𝒂 & 𝑭𝒆𝒍𝒊𝒙  <span class="tag-red">Santa&𝑭𝒆𝒍𝒊𝒙 </span></div>
+      <div class="loc">📍Shopee直播：Felina Canino & VIF 官方店铺 ​​​ ​​​ 18:00-19:00（泰国时间）</div>
+    </div>
+  </div>
 </div>
 
-<div class="tab-content show" id="nov">
-<div class="item">
-<img class="event-img" src="https://i.postimg.cc/L5fXySkk/img-1794918283682a27d88922309ee2321e555c82c3fc9a3f91e7dce84a89d36faf0b0b4255b88ac.jpg" alt="">
-  <div class="item-text">
-    <div class="time">11月20日 </div>
-    <div class="event"> BITH with PERTH <span class="tag-red">Perth</span></div>
-    <div class="loc">📍  LIVE  TikTok @biteto.thailand 17:00（泰国时间）</div>
-  </div>
-</div>
-</div>
-  
-<div class="tab-content show" id="nov">
-<div class="item">
-<img class="event-img" src="https://i.postimg.cc/g2vDHT56/1793097063358.png" alt="">
-  <div class="item-text">
-    <div class="time">11月21日 </div>
-    <div class="event">Dao Coffee Exclusive meeting <span class="tag-red">PerthSanta</span></div>
-    <div class="loc">📍 Lotus’s 拉玛4店（Lotus’s สาขาพระราม 4） 13:00–14:30（泰国时间）</div>
-  </div>
-</div>
-</div>
-
-  <div class="tab-content show" id="nov">
-<div class="item">
-  <img class="event-img" src="https://i.postimg.cc/kXp9XrHY/img-1793094583944164ed97b265382b50fbc90da548a11edb36257fa3167015af42db2cc6447e411.jpg" alt="">
-  <div class="item-text">
-    <div class="time">11月22日 </div>
-    <div class="event">OLAY × Perth 清迈见面会 <span class="tag-red">Perth</span></div>
-    <div class="loc">📍 One Nimman 17:00（泰时）</div>
-  </div>
-</div>
-</div>
-
-    <div class="tab-content show" id="nov">
-<div class="item">
-  <img class="event-img" src="https://i.postimg.cc/GpKMwGtJ/img-17930820009092d4b5d8181d7b7a3e8ab83e124ee8d677b274ed9b4eddfa5acff1c33d30b0ace.jpg" alt="">
-  <div class="item-text">
-    <div class="time">11月26日  周四</div>
-    <div class="event">BACK & GLOW TOGETHER <span class="tag-red">PerthSanta</span></div>
-    <div class="loc">📍 平台：BBB LIVE  ⏰ 19:00（泰国时间）</div>
-  </div>
-</div>
-</div>
-
-    <div class="tab-content show" id="nov">
-<div class="item">
-  <img class="event-img" src="https://i.postimg.cc/PJvp3bvw/IMG-20261027-183449.jpg" alt="">
-  <div class="item-text">
-    <div class="time">11月28日 </div>
-    <div class="event">GGMMTV Starlympics <span class="tag-red">PerthSantaDomiia</span></div>
-     <div class="loc">📍 Impact Arena, Muang Thong Thani  ⏰ 14:00（泰时）</div>
-  </div>
-</div>
-</div>
-  
- <div class="tab-content show" id="nov">
-<div class="item">
-<img class="event-img" src="https://i.postimg.cc/nLgpN5hq/img-1794918275979c8bd0b1aa7b7d73fc813ce2081b2030ae878f78f6c393409320c9a4c6c1f074a.jpg" alt="">
-  <div class="item-text">
-    <div class="time">11月29日 </div>
-    <div class="event"> DESTINY WELLNESS CLINIC <span class="tag-red">Perth</span></div>
-    <div class="loc">📍Central Northville ​​​ 17:30（泰国时间）</div>
-  </div>
-</div>
- </div>
-
-
-    <!-- ========== 12月 区域 ========== -->
+<!-- 12月 -->
 <div class="tab-content" id="dec">
   <div class="item">
     <img class="event-img" src="https://i.postimg.cc/d1dkGB50/mmexport1793198410157.jpg" alt="">
@@ -270,20 +222,21 @@ body{
   </div>
 </div>
 
+<!-- 2027年1月（在这里加行程） -->
+<div class="tab-content" id="jan">
+  <div class="item">
+    <img class="event-img" src="https://i.postimg.cc/y8rWRzBK/img-1795429645658ee029beb29e6e9abbf85e8789e3f8b9e25fea374de1d1e8132ea66161e19bbe9.jpg" alt="">
+    <div class="item-text">
+      <div class="time">1月30日</div>
+      <div class="event">Buldak × Perth <span class="tag-red">Perth</span></div>
+      <div class="loc">📍  ⏰ （泰时）</div>
+    </div>
+  </div>
+</div>
+
 <script>
 const btns = document.querySelectorAll('.tab-btn');
 const contents = document.querySelectorAll('.tab-content');
 btns.forEach(btn=>{
   btn.addEventListener('click', ()=>{
-    // 清除所有激活
-    btns.forEach(b=>b.classList.remove('active'));
-    contents.forEach(c=>c.classList.remove('show'));
-    // 设置当前选中
-    btn.classList.add('active');
-    const targetId = btn.getAttribute('data-tab');
-    document.getElementById(targetId).classList.add('show');
-  })
-})
-</script>
-</body>
-</html>
+    btns.forEach(b=>b.classList.remove('act
